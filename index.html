@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app-wrapper">
+
+        <section class="weather-container">
+
+            <header>
+                <h1>🌤 Live Weather App</h1>
+            </header>
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search any city..."
+                    autocomplete="off">
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="location-area">
+                <button id="locationBtn">
+                    📍 Detect My Location
+                </button>
+            </div>
+
+            <p class="loading" id="loading"></p>
+
+            <section class="weather-card">
+
+                <div class="icon-box">
+                    <img
+                        src="weather.png"
+                        id="weatherIcon"
+                        alt="Weather Icon"
+                        class="weather-icon">
+                </div>
+
+                <div class="weather-details">
+
+                    <h2 id="cityName">
+                        City Name
+                    </h2>
+
+                    <h3 id="temperature">
+                        -- °C
+                    </h3>
+
+                    <p id="condition">
+                        Weather : --
+                    </p>
+
+                    <p id="humidity">
+                        Humidity : -- %
+                    </p>
+
+                </div>
+
+            </section>
+
+            <p id="errorMessage" class="error"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
